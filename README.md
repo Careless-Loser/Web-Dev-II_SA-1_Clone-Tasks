@@ -10,7 +10,12 @@ Activities in Class and the First Assessment</p>
 
 ## Folder Structure
 
-### 1. Class Activity
+### 1. Assessment 1
+This folder includes two main tasks that assess your understanding of responsive design and layout techniques.
+- **Clone Task 1: Responsive Layout and Typography**
+- **Clone Task 2: Advanced Layout**
+
+### 2. Class Activity
 This folder contains exercises (Ex) that focus on different aspects of web development. Each exercise includes practical tasks to build your skills.
 
 - **Exercise 1: Image Posters**  
@@ -20,11 +25,6 @@ This folder contains exercises (Ex) that focus on different aspects of web devel
   - **Task 2: Grid Tasks**
 - **Exercise 4: Weston's Chocolate Box**
 - **Exercise 5: HTML Refresher**
-
-### 2. Assessment 1
-This folder includes two main tasks that assess your understanding of responsive design and layout techniques.
-- **Clone Task 1: Responsive Layout and Typography**
-- **Clone Task 2: Advanced Layout**
 
 ---
 
