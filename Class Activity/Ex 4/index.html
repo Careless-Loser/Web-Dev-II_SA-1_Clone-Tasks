@@ -1,277 +1,102 @@
 <html>
+
 <head>
     <title>Weston's Chocolate Box</title>
-    <style>
-        /* Global Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            font-family: 'Bonheur Royale';
-        }
-        
-        /* Header Styles */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background-color: #ffffff;
-            color: rgb(0, 0, 0);
-            font-family: 'Bonheur Royale';
-        }
-        header .logo {
-            font-size: 28px;
-            font-weight: bold;
-        }
-        nav a {
-            margin-left: 15px;
-            color: rgb(0, 0, 0);
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        /* Hero Section */
-        .hero-section {
-            background-color: #d12511;
-            text-align: center;
-            padding: 80px 20px;
-            color: white;
-        }
-        .hero-section h1 {
-            font-size: 48px;
-        }
-        .hero-section button {
-            background-color: #fff;
-            color: #d12511;
-            padding: 12px 25px;
-            font-size: 18px;
-            border: none;
-            cursor: pointer;
-            margin-top: 20px;
-        }
-
-        /* Promotions Section */
-        .promotions {
-            display: flex;
-            justify-content: space-between;
-            padding: 40px 20px;
-        }
-        .promo-card {
-            width: 30%;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .promo-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .promo-card p {
-            margin-top: 10px;
-            font-size: 18px;
-        }
-
-        /* Chocolate Box Section */
-        .chocolate-box {
-            position: relative;
-            height: 300px;
-            width: 300px;
-            cursor: pointer;
-            margin: 50px auto;
-            background-color: #f5b8b5;
-        }
-        .chocolate-box:before, .chocolate-box:after {
-            content: "";
-            position: absolute;
-        }
-        .chocolate-box:before {
-            width: 160px;
-            height: 160px;
-            background-color: #4b301b;
-            transform: translate(-50%, -50%);
-            top: 50%;
-            left: 50%;
-            box-shadow: 10px 10px #392312;
-        }
-        .chocolate-box:after {
-            width: 68px;
-            height: 68px;
-            background-color: #2b0900;
-            top: 81px;
-            left: 80px;
-            box-shadow: 70px 0 #2b0900, 70px 70px #2b0900, 0px 70px #2b0900;
-        }
-
-        /* Individual Chocolate Styles */
-        .chocs {
-            position: absolute;
-            z-index: 1;
-        }
-
-        .top-left, .bottom-right, .top-right, .bottom-left {
-            position: absolute;
-            border-radius: 50%;
-            background-color: #d12511;
-            width: 45px;
-            height: 45px;
-            transition: .2s;
-        }
-
-        /* Top Left Chocolate */
-        .top-left {
-            top: 92px;
-            left: 90px;
-        }
-        .top-left:hover {
-            transform: rotate(25deg);
-        }
-        .top-left:active {
-            opacity: 0;
-        }
-
-        /* Bottom Right Chocolate */
-        .bottom-right {
-            left: 162px;
-            top: 162px;
-        }
-        .bottom-right:hover {
-            transform: rotate(25deg);
-        }
-        .bottom-right:active {
-            opacity: 0;
-        }
-
-        /* Hover Flavors */
-        .flavors {
-            display: none;
-            position: absolute;
-            color: #fff;
-            font-family: "Brush Script MT", cursive;
-            font-size: 25px;
-        }
-
-        #white {
-            top: 100px;
-            left: 250px;
-        }
-        #milk {
-            top: 170px;
-            left: -70px;
-        }
-        #truffle {
-            left: 250px;
-            top: 170px;
-        }
-        #truffle2 {
-            left: -70px;
-            top: 100px;
-        }
-
-        /* Footer Styles */
-        footer {
-            background-color: #4b301b;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        /* Mobile Styles */
-        @media screen and (max-width: 768px) {
-            header {
-                flex-direction: column;
-            }
-            .promotions {
-                flex-direction: column;
-                align-items: center;
-            }
-            .promo-card {
-                width: 80%;
-                margin-bottom: 20px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header>
-        <div class="logo">Weston's Chocolate Box</div>
+
+
+    <!-- header -->
+    <header class="header">
+        <div class="header-wrapper">
+            <h1>Weston's Chocolate Box</h1>
+        </div>
+      
         <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Shop</a>
-            <a href="#">Contact</a>
+            <ul>
+                <li><a href="#overview">About us</a></li>
+                <li><a href="#build-box">Build Your Box</a></li>
+                <li><a href="#promotions">Promotions</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#auth">Sign Up / Sign In</a></li>
+            </ul>
         </nav>
     </header>
 
-    <section class="hero-section">
-        <h1>Build Your Own Chocolate Box</h1>
-        <button>Start Now</button>
+
+    <section id="overview" class="overview">
+        
+        <h2>About Us</h2>
+        <p>Welcome to Weston's Chocolate Box, where you can create your own chocolate box with your favorite selections.</p>
     </section>
 
-    <section class="promotions">
-        <div class="promo-card">
-            <img src="promo1.jpg" alt="Promo 1">
-            <p>Special Package Deal</p>
-        </div>
-        <div class="promo-card">
-            <img src="promo2.jpg" alt="Promo 2">
-            <p>Valentine's Special</p>
-        </div>
-        <div class="promo-card">
-            <img src="promo3.jpg" alt="Promo 3">
-            <p>Gourmet Selection</p>
-        </div>
+    <section id="build-box" style="display: show;">
+        <h2>Build Your Own Box</h2>
+        <p>Select an occasion to start building your box:</p>
+        <select id="occasion-select">
+            <option value="">Select an Occasion</option>
+            <option value="birthday">Birthday</option>
+            <option value="anniversary">Anniversary</option>
+            <option value="holiday">Holiday</option>
+            <option value="just-because">Just Because</option>
+        </select>
+        <button onclick="showChocolateGallery()">Start Building</button>
     </section>
 
-    <section class="chocolate-box">
-        <div id="top-left" class="top-left"></div>
-        <div id="top-right" class="top-right"></div>
-        <div id="bottom-left" class="bottom-left"></div>
-        <div id="bottom-right" class="bottom-right"></div>
-        <div id="white" class="flavors">White Chocolate</div>
-        <div id="milk" class="flavors">Milk Chocolate</div>
-        <div id="truffle" class="flavors">Chocolate Truffle</div>
-        <div id="truffle2" class="flavors">Chocolate Truffle</div>
+    <section id="chocolate-gallery" style="display:none;">
+        <h2>Select Your Chocolates</h2>
+        <div class="gallery">
+            <div class="chocolate-option" onclick="addToBasket('Dark Chocolate')">
+                <img src="dark-chocolate.jpg" alt="Dark Chocolate">
+                <p>Dark Chocolate</p>
+            </div>
+            <div class="chocolate-option" onclick="addToBasket('Milk Chocolate')">
+                <img src="milk-chocolate.jpg" alt="Milk Chocolate">
+                <p>Milk Chocolate</p>
+            </div>
+            <div class="chocolate-option" onclick="addToBasket('White Chocolate')">
+                <img src="white-chocolate.jpg" alt="White Chocolate">
+                <p>White Chocolate</p>
+            </div>
+            <div class="chocolate-option" onclick="addToBasket('Hazelnut Chocolate')">
+                <img src="hazelnut-chocolate.jpg" alt="Hazelnut Chocolate">
+                <p>Hazelnut Chocolate</p>
+            </div>
+            <!-- Add more chocolate options as needed -->
+        </div>
+        <button onclick="viewBasket()">View Basket</button>
+    </section>
+
+    <section id="promotions">
+        <h2>Key Promotions</h2>
+        <p>Check out our special package deals!</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@westonschocolatebox.com</p>
+        <p>Phone: +1234567890</p>
+    </section>
+
+    <section id="auth">
+        <h2>User Authentication</h2>
+        <form id="auth-form" onsubmit="return authenticateUser(event)">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Sign Up / Sign In</button>
+        </form>
     </section>
 
     <footer>
-        <p>Contact Us: info@westonschocolatebox.com | Call Us: 123-456-7890</p>
+        <p>&copy; 2024 Weston's Chocolate Box</p>
     </footer>
 
-    <script>
-        // Chocolate Hover Interactions
-        document.getElementById('top-left').addEventListener('mouseenter', function() {
-            document.getElementById('truffle2').style.display = 'block';
-        });
-        document.getElementById('top-left').addEventListener('mouseleave', function() {
-            document.getElementById('truffle2').style.display = 'none';
-        });
-
-        document.getElementById('bottom-left').addEventListener('mouseenter', function() {
-            document.getElementById('milk').style.display = 'block';
-        });
-        document.getElementById('bottom-left').addEventListener('mouseleave', function() {
-            document.getElementById('milk').style.display = 'none';
-        });
-
-        document.getElementById('bottom-right').addEventListener('mouseenter', function() {
-            document.getElementById('truffle').style.display = 'block';
-        });
-        document.getElementById('bottom-right').addEventListener('mouseleave', function() {
-            document.getElementById('truffle').style.display = 'none';
-        });
-
-        document.getElementById('top-right').addEventListener('mouseenter', function() {
-            document.getElementById('white').style.display = 'block';
-        });
-        document.getElementById('top-right').addEventListener('mouseleave', function() {
-            document.getElementById('white').style.display = 'none';
-        });
-    </script>
-    
+    <script src="script.js"></script>
 </body>
 </html>

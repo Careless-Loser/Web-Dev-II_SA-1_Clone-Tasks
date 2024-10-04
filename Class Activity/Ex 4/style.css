@@ -1,95 +1,173 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
-/* General Styles */
 body {
-    font-family: 'Arial, sans-serif';
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-  }
-  
-  header {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-  }
-  
-  nav {
+    text-align: center;
+    background-color: #ffffff; 
+    color: #000000;
+}
+
+.header {
+  background-image: url("https://i.pinimg.com/originals/02/a0/ae/02a0aeb9277fbac2a6ce38ab54c2ba71.gif");
+  background-size: cover; 
+  background-position: center;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); 
+  z-index: -1; 
+}
+
+
+.header-wrapper{
+  padding-left: 5rem;
+  padding-right: 5rem;
+  width: 90%;
+}
+
+.header-wrapper h1{
+  margin: 2rem 0;
+  font-size: 2.5rem;
+  width: 80%;
+}
+
+h1 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+nav {
+  position: relative;
+  top: 20px;
+  right: 400px;
+  padding: 1rem;
+  width: 200px; 
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li {
+  margin: 0.5rem 0;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+  text-align: right;
+}
+
+nav ul li a:hover {
+  color: #a47023; 
+}
+
+
+
+section {
+    padding: 20rem;
+    margin: 0rem;
+    background-color: #fff;
+}
+
+#overview{
+  background-image: url("https://images4.alphacoders.com/284/284054.jpg");
+  color: #ffffff;
+}
+
+.gallery {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-  }
-  
-  .basket-icon {
-    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.chocolate-option {
+    margin: 1rem;
+    text-align: center;
     cursor: pointer;
-  }
-  
-  .section {
-    padding: 40px 20px;
+}
+
+.chocolate-option img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.chocolate-option img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #6F4C3E;
+    color: #fff;
     text-align: center;
-  }
-  
-  .section h2 {
-    margin-bottom: 20px;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  .occasion-grid, .chocolate-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  .occasion-card, .chocolate-card {
-    border: 1px solid #ddd;
-    padding: 20px;
-    text-align: center;
-    background-color: white;
-    transition: transform 0.3s ease;
-  }
-  
-  .add-to-box {
-    background-color: #333;
-    color: white;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+button {
+    background-color: #6F4C3E;
+    color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
     cursor: pointer;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .nav-links {
-      display: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5b3d32;
+}
+
+select {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
     }
-  
-    .mobile-menu-icon {
-      display: block;
-      color: white;
-      font-size: 1.5rem;
+
+    h1 {
+        font-size: 2rem;
     }
-  
-    .occasion-grid, .chocolate-grid {
-      grid-template-columns: 1fr;
+
+    .chocolate-option img {
+        width: 80px;
+        height: 80px;
     }
-  }
-  
+}
