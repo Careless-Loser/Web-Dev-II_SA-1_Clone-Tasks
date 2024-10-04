@@ -1,0 +1,184 @@
+ /* General Styles */
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  h3, h2 {
+    margin: 0;
+    font-weight: 300;
+  }
+
+  .container {
+    padding: 2rem;
+  }
+
+  /* Task 1: Grid Layout */
+  .grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .grid-layout .sidebar, .grid-layout .main-content {
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Task 2: Responsive Photo Grid */
+  .photo-grid-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #000000;
+    max-width: 1000px;
+    width: 100%;
+  }
+
+  .photo-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  /* Task 3: Dashboard Interface */
+  .dashboard {
+    display: grid;
+    grid-template-areas: 
+      "header header"
+      "sidebar main";
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr;
+    margin-bottom: 2rem;
+    gap: 1rem;
+  }
+
+  .dashboard .header {
+    grid-area: header;
+    background-color: #000000;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    color: #ffffff;
+  }
+
+  .dashboard .sidebar {
+    grid-area: sidebar;
+    color: #ffffff;
+    background-color: black;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+
+  .dashboard .main-content {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 8px;
+    color: #ffffff;
+  }
+
+  .dashboard .widget {
+    background-color: #666;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  /* Task 4: Product Page Layout */
+  .product-page {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  .product-page .product-image img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .product-page .product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .product-page {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Task 5: CSS Grid Quiz Layout */
+  .quiz-container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #000000;
+    border-radius: 8px;
+  }
+
+  .quiz-container .question {
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+  }
+
+  .quiz-container .answers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .quiz-container .answer {
+    background-color: rgb(42, 42, 42);
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .quiz-container .answer:hover {
+    background-color: #777;
+  }
+
+  @media (max-width: 768px) {
+    .quiz-container .answers {
+      grid-template-columns: 1fr;
+    }
+  }

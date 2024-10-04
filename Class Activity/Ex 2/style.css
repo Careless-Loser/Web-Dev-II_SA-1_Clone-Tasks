@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    background-color: #000000;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+
+  nav ul li {
+    margin: 0 1rem;
+  }
+
+  nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+
+  nav ul li a:hover {
+    color: #d5d5d5;
+    text-decoration: underline;
+  }
+
+  section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #home {
+    background-image: url("https://i.pinimg.com/originals/53/c8/8c/53c88c1383f3a873273b23a365006197.gif");
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 100%;
+  }
+
+  footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  footer p {
+    margin: 0;
+  }
