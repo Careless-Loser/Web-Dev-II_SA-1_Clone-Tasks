@@ -73,13 +73,6 @@ Here is a basic structure of an HTML5 document:
 
 - **Footer**: End the webpage with the footer tag for additional information like author name and copyright.
 
-## Additional Tags Overview
-- **Structural Tags**: header, footer, section, article, and <aside> define different parts of a webpage.
-
-- **Media Tags**: Use figure and figcaption for images and captions.
-
-- **Forms**: HTML5 improves form handling with new input types (e.g., date, color).
-
 ## Scoring Criteria
 - **Correctness of HTML structure**: 5/10
 - **Appropriate usage of HTML tags**: 5/10
