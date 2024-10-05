@@ -1,4 +1,4 @@
-## HTML Document Structure README
+# HTML Document Structure README
 
 ## Overview
 
@@ -13,7 +13,7 @@ The webpage will display a title, link to an external stylesheet, show a paragra
 
 - **Images and Links**: Adding media and interactivity to a webpage is accomplished using img and a tags.
 
-##HTML Example
+## HTML Example
 Below is a basic structure of an HTML document created for this project:
 
 ---
