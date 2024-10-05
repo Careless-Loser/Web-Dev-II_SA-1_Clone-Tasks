@@ -14,7 +14,9 @@ The tutorial walks through creating a simple webpage with sections such as heade
 - **Improved Accessibility**: HTML5 ensures better accessibility and search engine optimization (SEO) with well-defined content structures.
 
 ## HTML5 Example
-## Here is a basic structure of an HTML5 document:
+Here is a basic structure of an HTML5 document:
+
+---
 
 <html>
 <head>
@@ -55,6 +57,8 @@ The tutorial walks through creating a simple webpage with sections such as heade
 
 </body>
 </html>
+
+---
 
 ## Project Instructions
 - **Create an HTML Document**: Start by declaring the document type (DOCTYPE html) and adding the html, head, and body tags.
