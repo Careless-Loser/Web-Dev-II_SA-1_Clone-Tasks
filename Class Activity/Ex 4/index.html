@@ -7,33 +7,33 @@
 
 <body>
 
-    <header>
-
-
-    <!-- header -->
-    <header class="header">
-        <div class="header-wrapper">
-            <h1>Weston's Chocolate Box</h1>
-        </div>
-      
-        <nav>
-            <ul>
-                <li><a href="#overview">About us</a></li>
-                <li><a href="#build-box">Build Your Box</a></li>
-                <li><a href="#promotions">Promotions</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#auth">Sign Up / Sign In</a></li>
-            </ul>
-        </nav>
-    </header>
-
-
+        <header class="header">
+            <!--Main Header Page which user will see as the website starts-->
+            <div class="header-wrapper">
+                <h3>Weston's Chocolate Box</h3> 
+                <h1>"Craft your personalized<br> box of chocolates,<br> with a selection<br> of flavors that<br> suit every occasion."</h1>
+                <p>_________________________________________________</p>
+                <div class="header-links"> 
+                    <a href="#overview">More About Us</a> 
+                </div>
+            </div>
+            <!--Navigation Bar which will take the user to the section pages-->
+            <nav>
+                <ul>
+                    <li><a href="#build-box">Build Your Box</a></li>
+                    <li><a href="#promotions">Promotions</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#auth">Sign Up / Sign In</a></li>
+                </ul>
+            </nav>
+        </header>
+    <!--Section: OVERVIEW is About Us-->
     <section id="overview" class="overview">
-        
         <h2>About Us</h2>
         <p>Welcome to Weston's Chocolate Box, where you can create your own chocolate box with your favorite selections.</p>
     </section>
 
+    <!--Section: BUILD-BOX is where user can make their chocolate basket and view it-->
     <section id="build-box" style="display: show;">
         <h2>Build Your Own Box</h2>
         <p>Select an occasion to start building your box:</p>
@@ -44,44 +44,85 @@
             <option value="holiday">Holiday</option>
             <option value="just-because">Just Because</option>
         </select>
+        <!--As user clicks on this it will lead user to Section: CHOCOLATE-GALLERY
+        where it will show user the selection of chocolates user can select and add to the basket-->
         <button onclick="showChocolateGallery()">Start Building</button>
     </section>
 
+    <!--Section: CHOCOLATE-GALLERY-->
     <section id="chocolate-gallery" style="display:none;">
         <h2>Select Your Chocolates</h2>
         <div class="gallery">
+            <!--Users can select from this and add to the basket-->
             <div class="chocolate-option" onclick="addToBasket('Dark Chocolate')">
-                <img src="dark-chocolate.jpg" alt="Dark Chocolate">
+                <img src="https://assets.clevelandclinic.org/transform/b171eb84-8e7f-42b2-884c-6d7f695136f0/darkChocolate-463813283-770x533-1_jpg" alt="Dark Chocolate">
                 <p>Dark Chocolate</p>
             </div>
             <div class="chocolate-option" onclick="addToBasket('Milk Chocolate')">
-                <img src="milk-chocolate.jpg" alt="Milk Chocolate">
+                <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2022/04/12/fn_healthy-chocolate-getty_s4x3.jpg.rend.hgtvcom.616.462.suffix/1649787692492.jpeg" alt="Milk Chocolate">
                 <p>Milk Chocolate</p>
             </div>
             <div class="chocolate-option" onclick="addToBasket('White Chocolate')">
-                <img src="white-chocolate.jpg" alt="White Chocolate">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Chocolate-branco-2.webp" alt="White Chocolate">
                 <p>White Chocolate</p>
             </div>
             <div class="chocolate-option" onclick="addToBasket('Hazelnut Chocolate')">
-                <img src="hazelnut-chocolate.jpg" alt="Hazelnut Chocolate">
+                <img src="https://static.toiimg.com/thumb/53315235.cms?imgsize=171274&width=800&height=800" alt="Hazelnut Chocolate">
                 <p>Hazelnut Chocolate</p>
             </div>
-            <!-- Add more chocolate options as needed -->
+            <div class="chocolate-option" onclick="addToBasket('Bittersweet Chocolate')">
+                <img src="https://jamiegeller.com/.image/t_share/MTY1NTI1MDI1NTk1OTkxNTkw/chocolate.jpg" alt="Bittersweet Chocolate">
+                <p>Bittersweet Chocolate</p>
+            </div>
+            <div class="chocolate-option" onclick="addToBasket('Ruby Chocolate')">
+                <img src="https://www.foodie.com/img/gallery/ruby-chocolate-is-the-perfect-treat-for-fruit-lovers/intro-1706214566.jpg" alt="Ruby Chocolate">
+                <p>Ruby Chocolate</p>
+            </div>
         </div>
+        <!--When user clicks on viewBasket it shows the user the chocolates added to the basket-->
         <button onclick="viewBasket()">View Basket</button>
     </section>
 
+    <!--Section: PROMOTIONS where user will get to know the discounts and sales on chocolates-->
     <section id="promotions">
         <h2>Key Promotions</h2>
         <p>Check out our special package deals!</p>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://firetreechocolate.co.uk/cdn/shop/collections/Firetree_giftset7.jpg?v=1715875073&width=2400" alt="Chocolate 1">
+                <div class="overlay">5% Off Sale</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://img.freepik.com/premium-photo/calorie-various-bars-chocolate-table_1022026-4941.jpg" alt="Chocolate 2">
+                <div class="overlay">25% Off Sale</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://img.freepik.com/premium-photo/table-full-chocolates-other-things-including-chocolate-bar_916191-8916.jpg" alt="Chocolate 3">
+                <div class="overlay">50% Off Sale</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://img.freepik.com/premium-photo/variety-chocolates-are-displayed-table_877233-19.jpg?w=360" alt="Chocolate 4">
+                <div class="overlay">75% Off Sale</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://img.freepik.com/premium-photo/variety-chocolates-are-table_894903-937.jpg?w=360" alt="Chocolate 5">
+                <div class="overlay">15% Off Sale</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://img.freepik.com/premium-photo/tray-chocolates-with-word-chocolate-side_849715-8790.jpg?w=360" alt="Chocolate 6">
+                <div class="overlay">10% Off Sale</div>
+            </div>
+        </div>
     </section>
-
+    
+    <!--Section: CONTACT is for user to contact the company-->
     <section id="contact">
         <h2>Contact Us</h2>
         <p>Email: info@westonschocolatebox.com</p>
         <p>Phone: +1234567890</p>
     </section>
 
+    <!--Section: AUTH is for user to sign and password-->
     <section id="auth">
         <h2>User Authentication</h2>
         <form id="auth-form" onsubmit="return authenticateUser(event)">
@@ -92,7 +133,7 @@
             <button type="submit">Sign Up / Sign In</button>
         </form>
     </section>
-
+    <!--Footer-->
     <footer>
         <p>&copy; 2024 Weston's Chocolate Box</p>
     </footer>
