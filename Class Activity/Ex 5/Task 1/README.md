@@ -80,16 +80,6 @@ Here is a basic structure of an HTML5 document:
 
 - **Forms**: HTML5 improves form handling with new input types (e.g., date, color).
 
-## To-Do Project
-- Create a small webpage using the following sections:
-
-Header
-Navigation bar
-Article content
-Side content (aside)
-Footer
-Each section must use the appropriate HTML tags as demonstrated in the tutorial.
-
 ## Scoring Criteria
 - **Correctness of HTML structure**: 5/10
 - **Appropriate usage of HTML tags**: 5/10
