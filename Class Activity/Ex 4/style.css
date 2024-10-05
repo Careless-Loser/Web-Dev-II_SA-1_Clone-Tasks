@@ -25,6 +25,51 @@ body {
   z-index: 1;
 }
 
+.header-wrapper {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  width: 90%;
+}
+
+.header-wrapper h3 {
+  padding-left: 10rem;
+  text-align: left;
+}
+
+.header-wrapper h1 {
+  padding-left: 10rem;
+  text-align: left;
+}
+
+.header-wrapper p {
+  padding-left: 10rem;
+  text-align: left;
+}
+
+.header-links {
+  padding-left: 10rem;
+  text-align: left;
+  display: flex;
+}
+
+.header-links a {
+  border: 2.5px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 0.8rem 1rem;
+  margin: 1rem 1rem 1rem 0;
+  transition: all 0.5s ease;
+}
+
+.header-links a:hover {
+  background: #fff;
+  color: #000;
+}
+
+
 .header::before {
   content: "";
   position: absolute;
@@ -36,19 +81,6 @@ body {
   z-index: -1; 
 }
 
-
-.header-wrapper{
-  padding-left: 5rem;
-  padding-right: 5rem;
-  width: 90%;
-}
-
-.header-wrapper h1{
-  margin: 2rem 0;
-  font-size: 2.5rem;
-  width: 80%;
-}
-
 h1 {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     font-size: 2.5rem;
@@ -56,11 +88,11 @@ h1 {
 }
 
 nav {
-  position: relative;
-  top: 20px;
-  right: 400px;
+  position: absolute; 
+  top: 1rem; 
+  right: 1rem; 
   padding: 1rem;
-  width: 200px; 
+  width: auto; 
 }
 
 nav ul {
@@ -68,11 +100,11 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 nav ul li {
-  margin: 0.5rem 0;
+  margin: 0 1rem;
 }
 
 nav ul li a {
@@ -80,13 +112,12 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
-  text-align: right;
+  text-align: center; 
 }
 
 nav ul li a:hover {
-  color: #a47023; 
+  color: #a47023;
 }
-
 
 
 section {
@@ -100,10 +131,58 @@ section {
   color: #ffffff;
 }
 
+#promotions{
+  background-color: #5b3d32;
+  color: #ffffff;
+}
+
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem; 
+  padding: 2rem 0;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 280px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1; 
+}
+
+#contact{
+  background-color: #000;
+  color: #ffffff;
 }
 
 .chocolate-option {
