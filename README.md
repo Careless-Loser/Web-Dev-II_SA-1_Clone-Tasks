@@ -25,6 +25,12 @@ This folder contains exercises (Ex) that focus on different aspects of web devel
   - **Task 2: Grid Tasks**
 - **Exercise 4: Weston's Chocolate Box**
 - **Exercise 5: HTML Refresher**
+  - **Task 1: HTML5 Tags and Elements**
+  - **Task 2: HTML Document Structure**
+  - **Task 3: Working with Text in HTML5**
+  - **Task 4: Working with Images in HTML5**
+  - **Task 5: Working with Links and Forms in HTML5**
+  - **Task 6: Tags and Elements Project in HTML5**
 
 ---
 
