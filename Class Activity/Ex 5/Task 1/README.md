@@ -8,15 +8,13 @@ It covers the basic building blocks of an HTML document, introduces new HTML5 ta
 The tutorial walks through creating a simple webpage with sections such as headers, navigation bars, articles, side content, and footers using semantic HTML5 tags.
 
 ## Key Features of HTML5
-- **Semantic Elements**: HTML5 introduces tags like <header>, <footer>, <article>, and <section> that help structure web content semantically.
-- **Multimedia Support**: Elements like <figure> and <figcaption> allow better media handling.
+- **Semantic Elements**: HTML5 introduces tags like header, footer, article, and section that help structure web content semantically.
+- **Multimedia Support**: Elements like figure and figcaption allow better media handling.
 - **Form Enhancements**: New input types like number, date, and color make creating forms easier.
 - **Improved Accessibility**: HTML5 ensures better accessibility and search engine optimization (SEO) with well-defined content structures.
 
-##HTML5 Example
-##Here is a basic structure of an HTML5 document:
-
-html
+## HTML5 Example
+## Here is a basic structure of an HTML5 document:
 
 <html>
 <head>
@@ -59,22 +57,22 @@ html
 </html>
 
 ## Project Instructions
-- **Create an HTML Document**: Start by declaring the document type (<!DOCTYPE html>) and adding the <html>, <head>, and <body> tags.
+- **Create an HTML Document**: Start by declaring the document type (DOCTYPE html) and adding the html, head, and body tags.
 
-- **Add a Header**: Use the <header> tag to create a heading for the webpage.
+- **Add a Header**: Use the header tag to create a heading for the webpage.
 
-- **Create a Navigation Bar**: Inside the <nav> tag, create a list of links using <ul>, <li>, and <a> tags.
+- **Create a Navigation Bar**: Inside the nav tag, create a list of links using ul, li, and a tags.
 
-- **Write an Article**: Use the <article> tag for the main content and section it using <h2>, <p> tags.
+- **Write an Article**: Use the article tag for the main content and section it using h2, p tags.
 
-- **Include Side Content**: Add complementary information in the <aside> tag.
+- **Include Side Content**: Add complementary information in the aside tag.
 
-- **Footer**: End the webpage with the <footer> tag for additional information like author name and copyright.
+- **Footer**: End the webpage with the footer tag for additional information like author name and copyright.
 
 ## Additional Tags Overview
-- **Structural Tags**: <header>, <footer>, <section>, <article>, and <aside> define different parts of a webpage.
+- **Structural Tags**: header, footer, section, article, and <aside> define different parts of a webpage.
 
-- **Media Tags**: Use <figure> and <figcaption> for images and captions.
+- **Media Tags**: Use figure and figcaption for images and captions.
 
 - **Forms**: HTML5 improves form handling with new input types (e.g., date, color).
 
@@ -93,5 +91,5 @@ Each section must use the appropriate HTML tags as demonstrated in the tutorial.
 - **Appropriate usage of HTML tags**: 5/10
 
 ## Conclusion
-This project aims to solidify your understanding of HTML5 by revisiting its essential components and guiding you in creating a basic webpage. 
+This project aims to solidify my understanding of HTML5 by revisiting its essential components and guiding you in creating a basic webpage. 
 Practice is key to mastering HTML, so keep exploring and trying out new tags to enhance your web development skills!
