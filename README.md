@@ -6,8 +6,6 @@
 The folder has been tidily divided into two sections: <br>
 Activities in Class and the First Assessment</p>
 
-----
-
 ## Folder Structure
 
 ### 1. Assessment 1
@@ -16,7 +14,7 @@ This folder includes two main tasks that assess your understanding of responsive
 - **Clone Task 2: Advanced Layout**
 
 ### 2. Class Activity
-This folder contains exercises (Ex) that focus on different aspects of web development. Each exercise includes practical tasks to build your skills.
+This folder contains exercises (Ex) that focus on different aspects of web development. Each exercise includes practical tasks to build skills.
 
 - **Exercise 1: Image Posters**  
 - **Exercise 2: Navigation Bar, Header, and Footer Website**
@@ -31,6 +29,3 @@ This folder contains exercises (Ex) that focus on different aspects of web devel
   - **Task 4: Working with Images in HTML5**
   - **Task 5: Working with Links and Forms in HTML5**
   - **Task 6: Tags and Elements Project in HTML5**
-
----
-
