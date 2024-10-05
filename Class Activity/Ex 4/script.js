@@ -1,3 +1,4 @@
+// For user  to add username and password
 let isAuthenticated = false;
 let basket = [];
 
@@ -15,6 +16,7 @@ function authenticateUser(event) {
     }
 }
 
+// Shows user the selection of chocolates to add in the basket
 function showChocolateGallery() {
     const occasion = document.getElementById("occasion-select").value;
     if (occasion) {
@@ -25,11 +27,13 @@ function showChocolateGallery() {
     }
 }
 
+// Adds chocolate to the user
 function addToBasket(chocolate) {
     basket.push(chocolate);
     alert(chocolate + " added to your basket!");
 }
 
+// Shows user the chocolate basket
 function viewBasket() {
     if (basket.length === 0) {
         alert("Your basket is empty.");
