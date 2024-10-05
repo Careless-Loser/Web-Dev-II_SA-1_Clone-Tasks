@@ -1,4 +1,4 @@
- # HTML5 Refresher README
+ # HTML5 Tags and Elements
 
 ## Overview
 This project serves as a refresher for the fundamentals of HTML5. 
