@@ -7,9 +7,6 @@ The objective is to use various HTML elements correctly while ensuring the page 
 
 ## Key Concepts and Elements
 
----
-
-## - **HTML Document Structure**:
 Every HTML document follows a specific structure, starting with DOCTYPE html, which declares the document type. Inside the html tag, two main sections exist:
 
 ---
