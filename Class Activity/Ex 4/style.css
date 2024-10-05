@@ -12,6 +12,7 @@ body {
     color: #000000;
 }
 
+  /* Header */
 .header {
   background-image: url("https://i.pinimg.com/originals/02/a0/ae/02a0aeb9277fbac2a6ce38ab54c2ba71.gif");
   background-size: cover; 
@@ -87,6 +88,7 @@ h1 {
     margin: 0;
 }
 
+  /* Navigation Bar */
 nav {
   position: absolute; 
   top: 1rem; 
@@ -119,18 +121,20 @@ nav ul li a:hover {
   color: #a47023;
 }
 
-
+  /* Section */
 section {
     padding: 20rem;
     margin: 0rem;
     background-color: #fff;
 }
 
+  /* Section #overview */
 #overview{
   background-image: url("https://images4.alphacoders.com/284/284054.jpg");
   color: #ffffff;
 }
 
+  /* Section #promotions */
 #promotions{
   background-color: #5b3d32;
   color: #ffffff;
@@ -180,6 +184,7 @@ section {
   opacity: 1; 
 }
 
+  /* Section #contact */
 #contact{
   background-color: #000;
   color: #ffffff;
@@ -202,6 +207,7 @@ section {
     transform: scale(1.1);
 }
 
+  /* Footer */
 footer {
     background-color: #6F4C3E;
     color: #fff;
