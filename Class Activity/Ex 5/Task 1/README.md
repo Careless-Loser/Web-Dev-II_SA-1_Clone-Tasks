@@ -60,7 +60,7 @@ Here is a basic structure of an HTML5 document:
 
 ---
 
-## Project Instructions
+## To-Do
 - **Create an HTML Document**: Start by declaring the document type (DOCTYPE html) and adding the html, head, and body tags.
 
 - **Add a Header**: Use the header tag to create a heading for the webpage.
