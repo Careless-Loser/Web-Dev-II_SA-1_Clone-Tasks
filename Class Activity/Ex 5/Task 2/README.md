@@ -1,4 +1,4 @@
-# HTML Document Structure README
+# HTML Document Structure
 
 ## Overview
 
