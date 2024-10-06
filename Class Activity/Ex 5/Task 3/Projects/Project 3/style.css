@@ -1,0 +1,105 @@
+body {
+    background-color: black; 
+    color: white; 
+}
+
+h1 {
+    color: white; 
+    text-align: center; 
+    padding-top: 60px; 
+}
+
+.Art {
+    height: auto;
+    width: 800px; 
+    position: absolute; 
+    margin: auto; 
+    top: 150px; 
+    bottom: 0px;
+    left: 0;
+    right: 0; 
+}
+
+#art {
+    height: auto; 
+    width: 700px; 
+    position: relative; 
+    margin: auto;
+    top: 0;
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    transition: 1s; 
+}
+
+figure:hover #art {
+    filter: grayscale(100%); 
+    transform: scale(1.1); 
+}
+
+.Stairs {
+    height: auto; 
+    width: 800px;
+    position: absolute;
+    margin: auto; 
+    top: 550px; 
+    bottom: 0;
+    left: 0; 
+    right: 0; 
+}
+
+#stairs {
+    height: auto;
+    width: 700px; 
+    position: relative; 
+    margin: auto; 
+    top: 0;
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    transition: 1s; 
+}
+
+figure:hover #stairs {
+    filter: blur(5px); 
+    transform: scale(1.1); 
+}
+
+.Walking {
+    height: auto; 
+    width: 800px;
+    position: absolute; 
+    margin: auto;
+    top: 950px; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+}
+
+#walking {
+    height: auto; 
+    width: 700px;
+    position: relative;
+    margin: auto; 
+    top: 0; 
+    bottom: 0;
+    left: 0; 
+    right: 0; 
+    transition: 1s;
+}
+
+figure:hover #walking {
+    filter: invert(100%);
+    transform: scale(1.1); 
+}
+
+figcaption {
+    color: white; 
+    font-size: 10px; 
+    text-align: center; 
+}
+
+span {
+    font-size: 16px; 
+    text-align: center; 
+}

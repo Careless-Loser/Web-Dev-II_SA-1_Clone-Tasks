@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Petrol Station</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+        <h2>Spec Petrol Station!</h2> 
+        <p>Please select the type of petrol you need:</p>
+        <select id="petrolType"> 
+            <option value="super">Super (98)</option>
+            <option value="special">Special (95)</option>
+            <option value="diesel">Diesel</option>
+            <option value="e-plus">E-Plus (91)</option>
+        </select>
+        <p>Please enter the amount of petrol you need (in liters):</p> 
+        <input id="litersNeeded" type="number" value="1.72"> 
+        <p>Do you need cleaning products for the car?</p> 
+        <label><input type="radio" name="cleaningProducts" value="yes"> Yes</label> 
+        <label><input type="radio" name="cleaningProducts" value="no" checked> No</label> 
+        <div id="cleaningProductsOptions" style="display: none;">
+            <p>Select cleaning product and quantity:</p> 
+            <select id="cleaningProductOptions"> 
+                <option value="0">None</option>
+                <option value="5">Car Wash Soap ($5)</option>
+                <option value="10">Interior Cleaner ($10)</option>
+                <option value="15">Complete Cleaning Kit ($15)</option>
+            </select>
+            <input id="quantity" type="number" value="1" min="1"> 
+        </div>
+        <button id="calculateBtn">Calculate Price</button> 
+        <div id="receipt" style="display: none;"> 
+            <h3>Bill Receipt</h3>
+            <p id="receiptContent"></p> 
+        </div>
+        <span id="response"></span> 
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>
