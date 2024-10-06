@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<!--Head-->
+<head>
+    <title>Interactive Form</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<!--Body-->
+<body>
+
+    <h1>Interactive User Form</h1>
+    <!--Link-->
+    <a href="https://www.google.com">Visit Website</a>
+
+    <!--Div Container-->
+    <div class="container"> 
+
+        <!--Form-->
+        <form id="userForm">
+
+            <!--Email-->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <!--Number-->
+            <label for="number">Number:</label>
+            <input type="number" id="number" name="number" required><br>
+
+            <!--Date-->
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br>
+
+            <!--Range-->
+            <label for="range">Range:</label>
+            <input type="range" id="range" name="range" min="0" max="100" required><br>
+
+            <!--Color-->
+            <label for="color">Color:</label>
+            <input type="color" id="color" name="color" required><br>
+
+            <!--Submit-->
+            <input type="submit" value="Submit">
+        </form>
+
+        <!--Output-->
+        <div id="output" style="display: none;"></div>
+    </div>
+
+    <!--Script-->
+    <script src="script.js"></script> 
+</body>
+</html>
