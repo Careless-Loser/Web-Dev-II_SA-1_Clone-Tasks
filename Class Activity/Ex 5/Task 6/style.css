@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* body */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+/* Header and navigation styling */
+header {
+  background-color: black;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 24rem;
+  margin: 0rem;
+  position: relative;
+  animation: floatUp 2s ease-out;
+  top: -50px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #ff9800;
+}
+
+/* Section styles */
+section {
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Article styling */
+#article {
+  background-color: rgb(53, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 21rem;
+  margin: 0rem;
+  position: relative;
+  animation: floatUp 2s ease-out;
+  top: -70px;
+}
+
+#article a{
+  color: rgb(255, 255, 255);
+  text-decoration: underline; 
+  font-weight: bold; 
+  font-size: smaller;
+}
+
+/* Contact section */
+aside#contact {
+  background-color: #171717;
+  padding: 22.5rem;
+  margin: 0rem;
+  position: relative;
+  animation: floatUp 2s ease-out;
+  top: -70px;
+}
+
+aside#contact figure {
+  margin: 0 auto;
+  text-align: center;
+}
+
+aside#contact img {
+  width: 30%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+aside#contact figcaption {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Sign In form */
+
+#signin {
+  background-color: #000000;
+  color: white;
+}
+
+#signin form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+  background-color: #000000;
+}
+
+#signin input[type="text"],
+#signin input[type="email"] {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#signin input[type="submit"] {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#signin input[type="submit"]:hover {
+  background-color: #ff9800;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
