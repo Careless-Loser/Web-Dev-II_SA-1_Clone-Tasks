@@ -7,8 +7,8 @@ The folder has been tidily divided into two sections: <br>
 Activities in Class and the First Assessment</p>
 
 ## Folder Structure
-**Web-Dev-II_SA-1_Clone-Tasks**/
-    ├── **Assessment 1**     
+**Web-Dev-II_SA-1_Clone-Tasks**/<br>
+    ├── **Assessment 1**     <br>
     └── **Class Activity**        
 
 ### 1. Assessment 1
