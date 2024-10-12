@@ -12,13 +12,11 @@ Activities in Class and the First Assessment</p>
     └── **Class Activity**        
 
 ### 1. Assessment 1
-This folder includes two main tasks that assess your understanding of responsive design and layout techniques.
 
 - **Clone Task 1: Responsive Layout and Typography**
 - **Clone Task 2: Advanced Layout**
 
 ### 2. Class Activity
-This folder contains exercises (Ex) that focus on different aspects of web development. Each exercise includes practical tasks to build skills.
 
 - **Exercise 1: Image Posters**  
 - **Exercise 2: Navigation Bar, Header, and Footer Website**
@@ -33,3 +31,7 @@ This folder contains exercises (Ex) that focus on different aspects of web devel
   - **Task 4: Working with Images in HTML5**
   - **Task 5: Working with Links and Forms in HTML5**
   - **Task 6: Tags and Elements Project in HTML5**
+- **Exercise 6: CSS Media Queries**
+  - **Task 1: Syntax and Usage of CSS Media Queries**
+  - **Task 2: Mobile-First Design with CSS Media Queries**
+  - **Task 3: CSS Media Queries in Real-World Scenarios**
