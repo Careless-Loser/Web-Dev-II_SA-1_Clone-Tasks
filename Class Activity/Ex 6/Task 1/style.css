@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: black;
+}
+
+/* Header */
+header {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 24.3rem;
+    margin: 0;
+    position: relative;
+    top: -50px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Scroll down arrow */
+.scroll-down {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.scroll-down:hover {
+    color: #ff0000;
+}
+
+/* Main */
+main {
+    padding: 280px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Media Queries */
+/* For small devices (phones, up to 600px wide) */
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 10rem;
+        background-color: rgb(72, 0, 0); 
+    }
+
+    main {
+        padding: 50px;
+        background-color: black;
+        color: white;
+    }
+
+    footer {
+        padding: 5px 0; 
+        background-color: #000000;
+    }
+
+    .scroll-down {
+        font-size: 1.5rem;
+    }
+}
+
+/* For medium devices (tablets, 601px to 1024px wide) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    header {
+        padding: 18rem; 
+        background-color: rgb(72, 0, 0); 
+    }
+
+    main {
+        padding: 100px; 
+        background-color: black;
+        color: white; 
+    }
+
+    footer {
+        padding: 10px 0;
+        background-color: rgb(72, 0, 0); 
+    }
+
+    .scroll-down {
+        font-size: 1.8rem; 
+    }
+}
+
+/* For large devices (desktops, 1025px and up) */
+@media only screen and (min-width: 1025px) {
+    header {
+        padding: 24.3rem;
+        background-color: black; 
+    }
+
+    main {
+        padding: 280px; 
+        background-color: white; 
+        color: black; 
+    }
+
+    footer {
+        padding: 10px 0; 
+        background-color: #333;
+    }
+
+    .scroll-down {
+        font-size: 2rem; 
+    }
+}
