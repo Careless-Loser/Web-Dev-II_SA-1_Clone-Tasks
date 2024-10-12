@@ -1,4 +1,4 @@
-# Responsive Webpage
+# Syntax and Usage of CSS Media Queries
 
 ## Description
 
