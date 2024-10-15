@@ -8,15 +8,15 @@ Activities in Class and the First Assessment</p>
 
 ## Folder Structure
 **Web-Dev-II_SA-1_Clone-Tasks**/<br>
-    ├── **Assessment 1**     <br>
+    ├── **Task 1 - Responsive Layout and Typography**     <br>
+    ├── **Task 2 - Advanced Layout**     <br>
     └── **Class Activity**        
 
-### 1. Assessment 1
+### 1. Task 1 - Responsive Layout and Typography
 
-- **Clone Task 1: Responsive Layout and Typography**
-- **Clone Task 2: Advanced Layout**
+### 2. Task 2 - Advanced Layout
 
-### 2. Class Activity
+### 3. Class Activity
 
 - **Exercise 1: Image Posters**  
 - **Exercise 2: Navigation Bar, Header, and Footer Website**
