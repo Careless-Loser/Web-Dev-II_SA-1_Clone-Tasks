@@ -9,7 +9,7 @@ Activities in Class and the First Assessment</p>
 ## Folder Structure
 **Web-Dev-II_SA-1_Clone-Tasks**/<br>
     ├── **Task 1 - Responsive Layout and Typography**     <br>
-    ├── **Task 2 - Advanced Layout**     <br>
+    ├── **Task 2 - Advanced Layout**      <br>
     └── **Class Activity**        
 
 ### 1. Task 1 - Responsive Layout and Typography
