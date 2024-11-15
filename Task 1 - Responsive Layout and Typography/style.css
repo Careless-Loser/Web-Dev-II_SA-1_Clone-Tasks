@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+/* Body */
+body {
+    background-color: #e9e9e9;
+    margin: auto;
+    color: black;
+    font-family: "Josefin Sans";
+}
+
+/* Headings */
+h1,h3,h2{
+    margin: 0%;
+    font-family: "Protest Guerrilla";
+}
+
+/* Header */
+header {
+    margin: 50px;  
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* LOGO Image */
+.logo img {
+    width: 200px;
+    height: auto;
+}
+
+/* Navigation Bar */
+nav {
+    width: 50%;
+    margin: 30px;  
+}
+
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0%;
+    text-align: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Main */
+main{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+}
+
+/* Main Heading 1 */
+main h1{
+    font-size: 90px;
+}
+
+/* Paragraph 1 */
+.P-1 {
+    font-size: 1.24rem; 
+    line-height: 1; 
+    max-width: 54ch; 
+    text-align: left;
+    padding: 0.5; 
+    padding-bottom: 10px;
+    margin: 10; 
+}
+
+/* Sub Headings */
+.sub-heading {
+    font-size: 40px;
+    line-height: 60px; 
+    padding-top: 10px; 
+
+}
+
+/* Intoduction */
+.Intro{
+    padding: 50px;
+    padding-bottom: 0px;   
+}
+
+/* Paragraphs */
+.paragraphs {
+    padding: 35px;           
+    padding-top: 0px;        
+    font-size: 14.5px;
+    column-count: 3;
+    column-gap: 21px;  
+}
+
+/* Coloumn Paragraph */
+#paragraph-3 {
+    padding-top: 15px; 
+}
+
+/* Heading 1 */
+.Heading-1{
+    font-size: calc(3 * 2.5rem);
+}
+
+/* Images */
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.featured-album{
+    grid-area: 1/1/span 2/ span 2
+}
+
+.album-cover-1{
+    grid-area: 1/3/span 1/ span 1
+}
+
+.album-cover-2{
+    grid-area: 1/4/span 1/ span 1
+}
+
+.album-cover-3{
+    grid-area: 2/3/span 1/ span 1
+}
+
+.album-cover-4{
+    grid-area: 2/4/span 1/ span 1
+}
+
+/* Authour */
+.author-section {
+    margin: auto;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    padding: 50px;  
+    gap: 50px;    
+}
+
+.author-section .sub-heading {
+    text-align: center;
+    font-size: 50px;
+}
+
+.author-img img{
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+/* Footer */
+footer{
+    width: 70%;
+    margin: auto;
+    background-color: #14181d;
+    color: white;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Desktop Screen */
+@media screen and (max-width: 1024px) {
+    body {
+        margin: auto; 
+    }
+
+    header {
+        margin: 40px;
+        margin-bottom: 40px;
+    }
+
+    .logo img {
+        width: 150px; 
+    }
+
+    nav {
+        width: 50%; 
+        margin: 0;
+        font-size: 10px;
+        padding-top: 30px;
+    }
+
+    header nav ul {
+        flex-direction: row; 
+        gap: 10px; 
+        padding: 0;
+        margin: 0;
+    }
+
+    main {
+        width: 70%;
+        margin: auto;
+    }
+
+    main h1 {
+        font-size: 60px;
+    }
+
+    .P-1 {
+        font-size: 14px;
+        line-height: 1;
+        max-width: 73%;
+        padding-left: 1px;
+        padding: auto;
+        margin: 10px 0;
+        padding-bottom: 0px;
+    }
+
+    .sub-heading {
+        font-size: 30px;
+        line-height: 1.3;
+        padding-top: 5px;
+    }
+
+    .Intro {
+        padding-left: 30px; 
+    }
+
+    .paragraphs {
+        column-count: 3; 
+        column-gap: 5px;
+        font-size: 10px;
+        padding-top: 0px;
+        padding-bottom: 20px;
+        padding-left: 29px;
+        padding-right: 22px;
+    }
+
+    .Heading-1 {
+        font-size: calc(3.6 * 1.5rem);
+    }
+
+    .image-container {
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 0px;
+    }
+
+    .author-section {
+        width: 80%;
+        padding: 20px;
+        flex-direction: row;
+        text-align: left;
+        font-size: 12px;
+    }
+
+    .author-section .sub-heading {
+        font-size: 35px; 
+    }
+
+    .author-img img {
+        max-width: 120px; 
+    }
+
+    footer {
+        width: 70%; 
+        padding: 15px;
+        font-size: 12px; 
+    }
+}
+
+/* Tablet Screen */
+@media screen and (max-width: 720px){
+    header, nav {
+        margin: 20px;  
+    }
+
+    main{
+        width: 85%;
+        margin-top: -25px;
+    }
+
+    nav{
+        width: 80%;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around; 
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 0 35px; 
+    }
+
+    .logo img {
+        width: 80px;
+        height: auto;
+    }
+
+    .Heading-1{
+        font-size: 50px;
+        text-align: center;
+    }
+    
+    .sub-heading {
+        font-size: 50px;
+        line-height: 1; 
+        text-align: center;
+    }
+
+    .P-1 {
+        font-size: 17px; 
+        line-height: 1; 
+        max-width: 60ch; 
+        text-align: left;
+        padding: 0.5; 
+        margin: 10; 
+        margin-bottom: 0; 
+    }
+    
+    .image-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .Intro, .paragraphs{
+        padding: 20px;  
+    }
+
+    .Intro .sub-heading {
+        padding: 0px;
+        text-align: center;
+    }
+
+    .paragraphs {
+        padding: 20px;         
+        padding-top: 10px;    
+        font-size: 16px;
+        column-count: 1;
+        padding-bottom: 30px;   
+    }
+
+    .author-section {
+        margin: auto;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        padding-top: 30px;  
+        gap: 5px;    
+    }
+    
+    .author-section .sub-heading {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .author-section article p {
+        text-align: left;
+        font-size: 16px;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+    
+
+    .author-img img{
+        max-width: 200px;
+        border-radius: 50%;
+    }
+
+    footer{
+        width: 100%;
+        padding: 5px;
+        font-size: 18px;
+    }
+}
+
+/* Large Moblie Screen */
+@media screen and (max-width: 540px) {   
+
+    header, nav {
+        margin: 20px;   
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    .Heading-1{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .sub-heading {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    main {
+    background-color: white;
+    width: 100%; 
+    }
+
+    .Intro, .paragraphs{
+        padding-left: 15px;  
+        padding-right: 9px; 
+        gap: 20px;     
+    }
+
+    .Intro .sub-heading {
+        padding: 0px 30px;
+    }
+
+    .P-1 {
+        font-size: 16px; 
+        line-height: 1;
+        max-width: 500px; 
+        text-align: left;
+        padding: 0; 
+        margin: 0; 
+        padding-top: 20px;
+    }
+
+    .paragraphs{
+        font-size: 16px; 
+        line-height: 1;
+        padding: 20px;
+    }
+
+    .image-container {
+        display: block;
+        gap: 0px; 
+    }
+    
+    .image-container img {
+        width: 100%;
+        height: auto; 
+        object-fit: fill; 
+    }
+
+
+    .author-section {
+        flex-direction: column; 
+        text-align: left; 
+        padding: 20px;
+    }
+
+    .author-section article {
+        width: 125%; 
+        max-width: 500px;
+    }
+    
+    .author-img {
+        order: -1; 
+        margin-bottom: 10px; 
+    }
+    
+    footer{
+        font-size: 16px;
+    }
+}
+
+/* Small Moblie Screen */
+@media screen and (max-width: 360px) {  
+    
+    body {
+        overflow-x: hidden;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    header, nav {
+        margin: 12px;   
+    }
+
+    .logo img {
+        width: 100px;
+        height: auto;
+    }
+    
+    nav {
+        font-size: 16px; 
+        padding-bottom: 25px;
+        padding-top: 10px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    header nav ul {
+        justify-content: center; 
+        gap: 45px;
+    }
+    
+    header nav ul li {
+        margin: 0; 
+        padding: 0; 
+    }
+
+    .Heading-1{
+        font-size: 55px;
+        text-align: center;
+    }
+
+    .sub-heading {
+        font-size: 55px;
+        text-align: center;
+    }
+
+    main {
+    background-color: white;
+    width: 100%; 
+    }
+
+    .P-1 {
+        font-size: 16px; 
+        line-height: 1; 
+        text-align: left;
+        padding-left: 20px; 
+    }
+
+    .Intro, .paragraphs{
+        padding-left: 20px;  
+        padding-right: 10px;  
+    }
+
+    .Intro .sub-heading {
+        padding: 0px 1px;
+    }
+
+    .P-1 {
+        font-size: 16px; 
+        line-height: 1;
+        max-width: 500px; 
+        text-align: left;
+        padding: 0; 
+        margin: 0;
+        padding-top: 20px;
+    }
+
+    .paragraphs{
+        font-size: 16px; 
+        line-height: 1;
+        padding: 12px;
+    }
+
+    .image-container {
+        display: block;
+        gap: 0px; 
+    }
+    
+    .image-container img {
+        width: 100%;
+        height: auto; 
+        object-fit: fill;
+        gap: 0px;
+    }
+
+
+    .author-section {
+        flex-direction: column; 
+        text-align: left; 
+        padding: 20px;
+    }
+
+    .author-section article {
+        width: 130%; 
+        max-width: 500px;
+        padding-left: 5px;
+    }
+    
+    .author-img {
+        order: -1; 
+        margin-bottom: 10px;
+    }
+    
+    footer{
+        font-size: 16px;
+    }
+}

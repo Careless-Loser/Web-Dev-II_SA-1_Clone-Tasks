@@ -1,0 +1,1440 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Teko:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Protest+Guerrilla&family=Teko:wght@300..700&display=swap");
+
+/* Body */
+body {
+  background-color: #4dccbd;
+  margin: auto;
+  font-family: "Lato", sans-serif;
+  color: black;
+}
+
+/* Header */
+header {
+  background-color: white;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000000;
+  font-family: "Teko", sans-serif;
+  box-shadow: 0px 0px 10px 15px #070410;
+}
+
+/* Logo */
+header .logo {
+  padding: 0px;
+  font-size: 3em;
+}
+
+header ul {
+  display: flex;
+  gap: 48px;
+  padding: 0%;
+  font-size: 1.2em;
+}
+
+header li {
+  list-style-type: none;
+}
+
+header a {
+  text-decoration: none;
+  color: #000000;
+  padding: 0%;
+}
+
+header button {
+  font-size: 2em;
+  font-family: "Teko", sans-serif;
+  padding: 0px;
+  border: 0px;
+  border-radius: 10px;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #231651;
+}
+
+header button a {
+  color: #FFFFFF;
+  box-sizing: border-box;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-decoration: none;
+}
+
+/* Main */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "Movie_1"
+    "Movie_2 Movie_3"
+    "Movie_4"
+    "Movie_5"
+    "Movie_6";
+    gap: 16px;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+/* Div class for Movie 1 */
+.Movie-Container {
+  background-color: #231651;
+  color: #FFFFFF;
+  margin: 16px;
+  box-shadow: 10px 10px 10px #070410;
+  display: grid;
+}
+
+/* Movie-Container Movie 1 */
+.Movie-Container .Movie-Poster {
+  grid-area: Poster;
+  display: grid;
+}
+
+/* Movie 1 Description */
+.Movie-Container .Movie-Description {
+  grid-area: Description;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 0px;
+  display: flex;
+  gap: 16px;
+}
+
+/* Movie 1 Description Paragraph*/
+.Movie-Container .Movie-Description p {
+  padding: 0%;
+  margin: 0%;
+}
+
+/* Movie 1 Button */
+.Movie-Container button {
+  grid-area: Button;
+}
+
+/* Movie 1 Image */
+.Movie-Container img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Movie 1 */
+.Movie-1 {
+  grid-area: movie1;
+  grid-template-rows: 1fr 0.6fr;
+}
+
+/* Movie 1 Movie Poster Image */
+.Movie-1 .Movie-Poster img {
+  width: 100%;
+  height: 300px;
+  -o-object-position: 0% 50%;
+  object-position: 0% 60%;
+}
+
+/* Movie 1 Description  Paragraph*/
+.Movie-1 .Movie-Description p {
+  flex: 1;
+  font-size: 1.3rem;
+  padding-right: 50px;
+}
+
+/* Movie 1 Button */
+.Movie-1 button {
+    font-size: 3em;
+    font-family: "Teko", sans-serif;
+    border: 0;
+    border-radius: 10px;
+    height: 130px;
+    box-sizing: border-box;
+    letter-spacing: 0;
+    white-space: nowrap;
+    padding: 0;
+    margin-right: 10px; /* Align the button to the left */
+    display: block;
+}
+  
+/* Movie 1 Button Text */
+.Movie-1 button a {
+    color: #070410;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 10px 70px;
+    display: flex;
+    line-height: 50px;
+    justify-content: center;
+}
+
+/* Movie 2 Grid Area */
+.Movie-2 {
+    grid-area: Movie_2; 
+}
+
+/* Movie 3 Grid Area */
+.Movie-3 {
+    grid-area: Movie_3; 
+}
+
+/* Div Class for Movie 2 and Movie 3 */
+.Movies-Row {
+    display: flex;           
+    gap: 10px;               
+    justify-content: center; 
+    margin-bottom: 20px;    
+}
+
+/* Div Class Saperate for Movie 2 and Movie 3 */
+.Movie_Container {
+    width: 380px;             
+    margin: 20px 10px;     
+    padding: 5px;
+    background-color: #231651;
+    color: #FFFFFF;
+    box-shadow: 10px 10px 10px #070410;
+    display: grid;
+}
+
+/* Movie 2 */
+.Movie-2{
+    display: grid;
+    grid-template-rows: 1fr auto;
+    gap: 16px;
+    grid-column: span 1;
+    flex-direction: row;
+    width: 100px; 
+    height: 600px; 
+    padding-left: 20px; 
+}
+
+/* Movie 3 */
+.Movie-3 {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    gap: 16px;
+    grid-column: span 1;
+    flex-direction: row;
+    width: 100px; 
+    height: 600px; 
+    padding-left: 20px; 
+}
+
+/* Movie 2 and Movie 3 Div Class */
+.Movie-2 .Movie-Container ,
+.Movie-3 .Movie-Container  {
+    display: flex;
+    flex-direction: column; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 0 auto; 
+}
+
+/* Movie 2 and Movie 3 Movies Description */
+.Movie-2 .Movie-Description,
+.Movie-3 .Movie-Description {
+    text-align: left; 
+}
+
+/* Movie 2 Movies Description Paragraph */
+.Movie-2 .Movie-Description p {
+    position: relative;
+    top: -50px; 
+    left: -15px;
+    margin: 0; 
+    font-size: 1.2rem;
+}
+
+/* Movie 3 Movies Description Paragraph */
+.Movie-3 .Movie-Description p {
+    position: relative;
+    top: -40px; 
+    left: -15px;
+    margin: 0; 
+    padding-right: 10px;
+    font-size: 1.2rem;
+}
+
+/* Movie 2 and Movie 3 Movies Poster Image */
+.Movie-2 .Movie-Poster img,
+.Movie-3 .Movie-Poster img {
+    width: 390px; 
+    height: 310px; 
+    object-fit: cover; 
+    object-position: left; 
+    -o-object-position: 0% 10%;
+    object-position: 0% 5%;
+    margin-left: -25px;
+    margin-top: -5px; 
+    display: block; 
+}
+
+/* Movie 2 Button */
+.Movie-2 button {
+    position: relative;
+    top: -10px; 
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    width: 95%;
+    font-size: 50px;
+    font-family: "Teko", sans-serif;
+    margin: 0; 
+}
+
+/* Movie 3 Button */
+.Movie-3 button {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    width: 95%; 
+    font-size: 50px;
+    font-family: "Teko", sans-serif;
+    margin-bottom: 10px;
+}
+
+/* Movie 2 and Movie 3 Buttons Text*/
+.Movie-2 button a, .Movie-3 button a {
+  color: #070410;
+  box-sizing: border-box;
+  padding: 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Div Class for Movie 4,5,6 */
+.MovieContainer {
+    width: 800px;     
+    height: 400px;        
+    margin: 20px 10px;         
+    padding: 5px;
+    background-color: #231651;
+    color: #FFFFFF;
+    box-shadow: 10px 10px 10px #070410;
+    display: grid;
+}
+
+/* Movie 4, Movie 5 and Movie 6 */
+.Movie-4, .Movie-5, .Movie-6 {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 16px;
+}
+
+/* Movie 4, Movie 5 and Movie 6 Movie Poster Images */
+.Movie-4 .Movie-Poster img, 
+.Movie-5 .Movie-Poster img, 
+.Movie-6 .Movie-Poster img {
+    width: 400px; 
+    height: 410px; 
+    object-fit: cover; 
+    object-position: left; 
+    -o-object-position: 0% 10%;
+    object-position: 0% 5%;
+    margin-left: -5px;
+    margin-top: -5px; 
+    display: block; 
+}
+
+/* Movie 4, Movie 5 and Movie 6 Movie Description */
+.Movie-4 .Movie-Description, 
+.Movie-5 .Movie-Description, 
+.Movie-6 .Movie-Description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px; 
+    font-size: 1.3rem;
+}
+
+/* Movie 4, Movie 5 and Movie 6 Movie Buttons */
+.Movie-4 button, 
+.Movie-5 button, 
+.Movie-6 button {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%; 
+    font-size: 50px;
+    font-family: "Teko", sans-serif;
+    margin-bottom: 10px;
+}
+
+/* Movie 4, Movie 5 and Movie 6 Movie Buttons Text */
+.Movie-4 button a, 
+.Movie-5 button a, 
+.Movie-6 button a {
+    color: #070410;
+    box-sizing: border-box;
+    padding: 16px;
+    text-decoration: none;
+}
+
+/* Desktop Screen */
+@media screen and (max-width: 1023px) {
+
+  header ul {
+    gap: 32px;
+  }
+
+  main {
+    margin: 32px 32px;
+    justify-self: center;
+    grid-auto-columns: minmax(100px, 1fr);
+    grid-template-areas: "movie1 movie2" "movie3 movie4" "movie5 movie6";
+  }
+
+  .movie-container {
+    grid-template-columns: minmax(100px, 1fr);
+  }
+
+  .movie-container .movie-desc {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .movie-container img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .movie-container button {
+    box-sizing: border-box;
+    padding: 16px;
+  }
+
+  .movie-container button a {
+    box-sizing: border-box;
+    padding: 0px 101px;
+    display: flex;
+    line-height: 50px;
+    justify-content: center;
+  }
+
+  .movie-container-1 {
+    grid-template-areas: "poster" "desc";
+    grid-template-rows: 0.5fr 1fr;
+  }
+
+  .movie-container-1 p, .movie-container-1 button {
+    flex: 0;
+  }
+
+  .movie-container-2, .movie-container-3 {
+    grid-template-rows: 0.5fr 1fr;
+  }
+
+  .movie-container-4, .movie-container-5, .movie-container-6 {
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-areas: "poster" "desc";
+  }
+
+}
+
+/* Tablet Screen */
+@media screen and (max-width: 720px) {
+  body {
+    background-color: #ffffff;
+    margin: auto;
+    font-family: "Lato", sans-serif;
+    color: black;
+  }
+
+  header {
+    background-color: #4dccbd;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+    font-family: "Teko", sans-serif;
+    box-shadow: 0px 0px 10px 25px #070410;
+    margin-top: -200px;
+    margin-bottom: 30px;
+  }
+
+  header ul {
+    gap: 3px;
+  }
+
+  header .logo {
+    margin-top: 200px;
+    padding: 0px;
+    font-size: 3.5em;
+  }
+  
+  header ul {
+    display: flex;
+    margin-top: 220px;
+    margin-left: 20px;
+    gap: 50px;
+    padding: 0%;
+    font-size: 20px;
+  }
+  
+  header li {
+    list-style-type: none;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: #000000;
+    padding: 0%;
+  }
+  
+  header button {
+    font-size: 3em;
+    font-family: "Teko", sans-serif;
+    padding: 0px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 2px;
+    border: 0px;
+    border-radius: 10px;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: #231651;
+    margin-top: 200px;
+  }
+
+  main {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr; 
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 7%;
+    margin-left: 2px;
+    margin-bottom: -50px;
+  }
+
+  .Movie-Container {
+    background-color: #231651;
+    color: #FFFFFF;
+    box-shadow: 10px 10px 10px #070410;
+    justify-content: space-between;  
+    width: 300px; 
+    height: 500px; 
+    margin-top: 240px;
+    margin-left: 20px;
+  }
+
+  .Movie-Container .Movie-1 img {
+    width: 300px; /* Set your desired square size */
+    height: 300px; /* Match the height to the width */
+    object-fit: cover; /* Ensures the image covers the square area without distortion */
+    margin-top: -249px;
+    margin-bottom: 470px;
+  }  
+
+  .Movie-Container .Movie-1 button {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    width: 270px; 
+    height: 100px;
+    font-size: 40px;
+    font-family: "Teko", sans-serif;
+    margin-top: -150px;
+    margin-left: -250px;
+    margin-right: 14px;
+  } 
+  
+  .Movie-Container .Movie-1 button a {
+    color: #070410;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: flex;
+    line-height: 40px;
+    justify-content: center;
+    margin-top: 4px;
+  }
+
+  .Movie-Container .Movie-1 .Movie-Description {
+  width: 100%;
+  }  
+  
+  .Movie-Container .Movie-1 .Movie-Description p {
+    font-size: 21px;
+    text-align: left; 
+    line-height: 1.2; 
+    margin: 0; 
+    padding: 0; 
+    width: 140px; 
+    hyphens: auto; 
+    word-wrap: break-word; 
+    margin-top: -467px;
+    margin-left: 10px;
+  }
+
+  .Movies-Row {
+    background-color: transparent;
+    width: 0px; 
+    height: 0px; 
+    margin-left: -600px;
+  }
+
+  .Movie_Container {
+    background-color: transparent;
+    width: 0px; 
+    height: 0px; 
+    margin-left: -600px;
+  }
+
+  .Movie_Container .Movie-2 {
+    background-color: #231651;
+    color: #FFFFFF;
+    box-shadow: 10px 10px 10px #070410;
+    justify-content: space-between;  
+    width: 300px; 
+    height: 750px; 
+    margin-top: -34px;
+    margin-left: 265px;
+    margin-bottom: 600px;
+  }
+
+   .Movie_Container .Movie-2 img{
+    background-color: #231651;
+    color: #FFFFFF;
+    justify-content: space-between;  
+    width: 321px; 
+    height: 300px; 
+    margin-top: 0px;
+    margin-left: -21px;
+    box-shadow: none;
+  }
+
+  .Movie_Container .Movie-2 .Movie-Description {
+    width: 100%;
+  }  
+  
+  .Movie_Container .Movie-2 .Movie-Description p {
+    font-size: 21px;
+    text-align: left; 
+    line-height: 1.2; 
+    margin: 0; 
+    padding: 0; 
+    width: 300px; 
+    hyphens: auto; 
+    word-wrap: break-word; 
+    margin-bottom: 65px;
+    margin-left: 10px;
+  }
+  
+  .Movie_Container .Movie-2 button {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    width: 290px;
+    height: 100px;
+    font-size: 40px;
+    font-family: "Teko", sans-serif;
+    margin-left: -4px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 0;
+  }
+  
+  .Movie_Container .Movie-2 button a {
+    color: #070410;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    line-height: 1;
+    width: 100%;
+    white-space: normal; 
+    overflow-wrap: break-word; 
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+  
+  .Movie_Container .Movie-2 button a {
+    max-width: 150px; 
+  }  
+
+  .Movie_Container .Movie-3 {
+    background-color: #231651;
+    color: #FFFFFF;
+    box-shadow: 10px 10px 10px #070410;
+    justify-content: space-between;  
+    width: 280px; 
+    height: 750px; 
+    margin-top: 750px;
+    margin-left: 500px;
+  }
+
+   .Movie_Container .Movie-3 img{
+    background-color: #231651;
+    color: #FFFFFF;
+    justify-content: space-between;  
+    width: 300px; 
+    height: 300px; 
+    margin-top: 0px;
+    margin-left: -20px;
+  }
+
+  .Movie_Container .Movie-3 .Movie-Description {
+    width: 100%;
+  }  
+  
+  .Movie_Container .Movie-3 .Movie-Description p {
+    font-size: 21px;
+    text-align: left; 
+    line-height: 1.2; 
+    margin: 0; 
+    padding: 0; 
+    width: 280px; 
+    hyphens: auto; 
+    word-wrap: break-word; 
+    margin-bottom: 60px;
+    margin-left: 10px;
+  }
+  
+  .Movie_Container .Movie-3 button {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    width: 275px;
+    height: 100px;
+    font-size: 40px;
+    font-family: "Teko", sans-serif;
+    margin-bottom: 15px;
+    margin-left: -8px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding: 0;
+  }
+  
+  .Movie_Container .Movie-3 button a {
+    color: #070410;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    line-height: 1;
+    width: 100%;
+    white-space: normal; 
+    overflow-wrap: break-word; 
+  }
+  
+  .Movie_Container .Movie-3 button a {
+    max-width: 150px; 
+  } 
+
+.MovieContainer {
+    margin-top: 800px;
+    background-color: transparent;
+    height: 0px;
+    width: auto;
+    box-shadow: none;
+    margin-bottom: -60px;
+}
+
+.MovieContainer .Movie-4 {
+  width: 320px;
+  height: 750px;
+  background-color: #231651;
+  color: #FFFFFF;
+  margin-top: -805px;
+  margin-left: 340px;
+  box-shadow: 10px 10px 10px #070410;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 20px;
+}
+
+.MovieContainer .Movie-4 .Movie-Poster img {
+  background-color: #231651;
+    color: #FFFFFF;
+    justify-content: space-between;  
+    width: 320px; 
+    height: 300px; 
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.Movie-4 .Movie-Description {
+  width: 100%;
+}
+
+.Movie-4 .Movie-Description p {
+  font-size: 21px;
+  text-align: left; 
+  line-height: 1.2; 
+  margin: 0; 
+  padding: 0; 
+  width: 220px; 
+  hyphens: auto; 
+  word-wrap: break-word; 
+  margin-top: -25px;
+  margin-bottom: 51px;
+  margin-left: 15px;
+}
+
+.Movie-4 button {
+  background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    width: 275px;
+    height: 100px;
+    font-size: 40px;
+    font-family: "Teko", sans-serif;
+    margin-top: 26px;
+    margin-left: 25px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding: 0; 
+}
+
+.Movie-4 button a {
+  color: #070410;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  width: 100%;
+  white-space: normal; 
+  overflow-wrap: break-word; 
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.MovieContainer .Movie-4 button a {
+  max-width: 150px; 
+}  
+
+.MovieContainer .Movie-5 {
+  width: 300px;
+  height: 745px;
+  background-color: #231651;
+  color: #FFFFFF;
+  margin-top: -20px;
+  margin-left: -705px;
+  box-shadow: 10px 10px 10px #070410;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 20px;
+}
+
+.MovieContainer .Movie-5 .Movie-Poster img {
+  background-color: #231651;
+    color: #FFFFFF;
+    justify-content: space-between;  
+    width: 300px; 
+    height: 300px; 
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.Movie-5 .Movie-Description {
+  width: 100%;
+}
+
+.Movie-5 .Movie-Description p {
+  font-size: 21px;
+  text-align: left; 
+  line-height: 1.2; 
+  margin: 0; 
+  padding: 0; 
+  width: 190px; 
+  hyphens: auto; 
+  word-wrap: break-word; 
+  margin-top: -25px;
+  margin-bottom: 51px;
+  margin-left: 15px;
+}
+
+.Movie-5 button {
+  background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    width: 275px;
+    height: 100px;
+    font-size: 40px;
+    font-family: "Teko", sans-serif;
+    margin-top: 21px;
+    margin-left: 15px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding: 0; 
+}
+
+.Movie-5 button a {
+  color: #070410;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  width: 100%;
+  white-space: normal; 
+  overflow-wrap: break-word; 
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.MovieContainer .Movie-5 button a {
+  max-width: 150px; 
+}  
+
+.MovieContainer .Movie-6 {
+  width: 320px;
+  height: 745px;
+  background-color: #231651;
+  color: #FFFFFF;
+  margin-top: -790px;
+  margin-left: 340px;
+  box-shadow: 10px 10px 10px #070410;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 20px;
+}
+
+.MovieContainer .Movie-6 .Movie-Poster img {
+  background-color: #231651;
+    color: #FFFFFF;
+    justify-content: space-between;  
+    width: 320px; 
+    height: 300px; 
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.Movie-6 .Movie-Description {
+  width: 100%;
+}
+
+.Movie-6 .Movie-Description p {
+  font-size: 21px;
+  text-align: left; 
+  line-height: 1.2; 
+  margin: 0; 
+  padding: 0; 
+  width: 220px; 
+  hyphens: auto; 
+  word-wrap: break-word; 
+  margin-top: -25px;
+  margin-bottom: 51px;
+  margin-left: 15px;
+}
+
+.Movie-6 button {
+  background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    width: 275px;
+    height: 100px;
+    font-size: 40px;
+    font-family: "Teko", sans-serif;
+    margin-top: 0px;
+    margin-left: 25px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding: 0; 
+}
+
+.Movie-6 button a {
+  color: #070410;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  width: 100%;
+  white-space: normal; 
+  overflow-wrap: break-word; 
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.MovieContainer .Movie-6 button a {
+  max-width: 150px; 
+}  
+   
+}
+
+/* Small Moblie Screen */
+@media screen and (max-width: 360px) {
+
+  body {
+    background-color: #070410;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    color: black;
+    overflow-x: hidden; 
+    max-width: 100%; 
+  }
+  header {
+    background-color: #231651;
+    width: 360px;
+    box-sizing: border-box;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    font-family: "Teko", sans-serif;
+    box-shadow: 0px 0px 10px 25px #070410;
+    margin-top: -200px;
+    margin-bottom: 30px;
+  }
+
+  header .logo {
+    margin-top: 200px;
+    padding: 0px;
+    font-size: 2.5em;
+  }
+  
+  header ul {
+    display: none;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0%;
+  }
+  
+  header button {
+    font-size: 3em;
+    font-family: "Teko", sans-serif;
+    padding: 0px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 2px;
+    border-radius: 15px;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: #4dccbd;
+    margin-top: 200px;
+  }
+
+  header button a {
+    color: #070410;
+  }
+
+  .Movie-Container {
+    background-color: #231651;
+    color: #FFFFFF;
+    box-shadow: 10px 10px 10px #070410;
+    justify-content: space-between;  
+    width: 360px; 
+    height: 530px; 
+    margin-top: 240px;
+    margin-left: -2px;
+  }
+
+  .Movie-Container .Movie-1 {
+    position: relative; 
+  }
+
+  .Movie-Container .Movie-1 img {
+    width: 360px; 
+    height: 340px; 
+    object-fit: cover;
+    margin-top: -249px;
+    margin-bottom: 470px;
+  }  
+
+  .Movie-Container .Movie-1 button {
+    font-size: 3em;
+    font-family: "Teko", sans-serif;
+    border: 0;
+    border-radius: 10px;
+    height: 100px;
+    width: 330px;
+    box-sizing: border-box;
+    margin-left: -330px; 
+    margin-top: -150px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    position: relative;
+    z-index: 2;
+  }
+  
+  .Movie-Container .Movie-1 button a {
+    color: #070410;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap; 
+    text-align: center;
+  }
+   
+
+  .Movie-Container .Movie-1 .Movie-Description {
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 0; 
+   }  
+  
+  .Movie-Container .Movie-1 .Movie-Description p {
+    font-size: 24px;
+    text-align: left; 
+    line-height: 1.2; 
+    margin-top: -460px;
+    margin-left: -5px;
+    margin-bottom: 0px;
+    word-wrap: break-word;
+    width: 310px;
+  }
+
+  .Movie_Container .Movie-2 {
+    background-color: #231651;
+    color: #FFFFFF;
+    box-shadow: 10px 10px 10px #070410;
+    justify-content: space-between;  
+    width: 340px; 
+    height: 750px; 
+    margin-top: 790px;
+    margin-left: -133px;
+    margin-bottom: 600px;
+  }
+
+  .Movie_Container .Movie-2 img {
+    width: 360px; 
+    height: 340px; 
+    object-fit: cover;
+    margin-top: -29px;
+    margin-bottom: 40px;
+  }  
+  
+  .Movie_Container .Movie-2 button {
+    font-size: 3em;
+    font-family: "Teko", sans-serif;
+    border: 0;
+    border-radius: 10px;
+    height: 100px;
+    width: 330px;
+    box-sizing: border-box;
+    margin-left: -5px; 
+    margin-top: -150px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    position: relative;
+    z-index: 2;
+  }
+  
+  .Moviea-Container .Movie-2 button a {
+    color: #070410;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap; 
+    text-align: center; 
+  } 
+
+  .Movie_Container .Movie-2 .Movie-Description {
+    width: 130%; 
+    margin-top: -10px;
+   }  
+  
+  .Movie_Container .Movie-2 .Movie-Description p {
+    font-size: 24px;
+    text-align: left; 
+    line-height: 1.2; 
+    margin-top: -370px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    word-wrap: break-word;
+    width: 330px;
+  }
+
+  .Movie_Container .Movie-2 button {
+    font-family: "Teko", sans-serif;
+    border: 0;
+    border-radius: 10px;
+    height: 100px;
+    width: 330px;
+    box-sizing: border-box;
+    margin-left: -5px; 
+    margin-top: 10px;
+    margin-bottom: -10px;
+  }
+  
+  .Movie_Container .Movie-2 button a {
+    color: #070410;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap; 
+    text-align: center;
+    margin-left: -130px;
+    font-size: 70px;
+
+  } 
+
+  .Movie_Container .Movie-3 {
+    background-color: #231651;
+    color: #FFFFFF;
+    box-shadow: 10px 10px 10px #070410;
+    width: 340px;
+    height: 750px;
+    margin-top: 1585px;
+    position: relative;
+    left: -63px; 
+}
+
+.Movie_Container .Movie-3 img {
+  width: 360px; 
+  height: 340px; 
+  object-fit: cover; 
+  margin-top: -29px;
+  margin-bottom: 40px;
+}
+
+.Movie_Container .Movie-3 button {
+  font-family: "Teko", sans-serif;
+  border: 0;
+  border-radius: 10px;
+  height: 100px;
+  width: 330px;
+  box-sizing: border-box;
+  margin-left: -5px;
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+
+.Movie_Container .Movie-3 button a {
+  color: #070410;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+  text-align: center;
+  margin-left: -130px;
+  font-size: 70px;
+
+}  
+
+.Movie_Container .Movie-3 .Movie-Description {
+  width: 130%;
+  margin-top: -10px; 
+ }  
+
+.Movie_Container .Movie-3 .Movie-Description p {
+  font-size: 24px;
+  text-align: left; 
+  line-height: 1.2; 
+  margin-top: -380px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  word-wrap: break-word;
+  width: 330px;
+}
+
+.MovieContainer .Movie-4 {
+  background-color: #231651;
+  color: #FFFFFF;
+  box-shadow: 10px 10px 10px #070410;
+  justify-content: space-between;  
+  width: 360px; 
+  height: 750px; 
+  margin-top: 765px;
+  margin-left: -17px;
+  margin-bottom: 600px;
+}
+
+.MovieContainer .Movie-4 .Movie-Poster img {
+  width: 360px; 
+  height: 340px; 
+  object-fit: cover; 
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.MovieContainer .Movie-4 .Movie-Description {
+  width: 100%; 
+  margin-top: 5px; 
+ }  
+
+.MovieContainer .Movie-4 .Movie-Description p {
+  font-size: 24px;
+  text-align: left; 
+  line-height: 1.2; 
+  margin-top: -390px;
+  margin-left: 20px;
+  margin-bottom: 0px;
+  word-wrap: break-word;
+  width: 300px;
+}
+
+.MovieContainer .Movie-4 button {
+  font-family: "Teko", sans-serif;
+  border: 0;
+  border-radius: 10px;
+  height: 100px;
+  width: 330px;
+  box-sizing: border-box;
+  margin-left: 12px; 
+  margin-top: -25px;
+  margin-bottom: 10px;
+}
+
+.MovieContainer .Movie-4 button a {
+  color: #070410;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap; 
+  text-align: center;
+  margin-left: -130px;
+  font-size: 70px;
+} 
+
+  .MovieContainer .Movie-5 {
+    background-color: #231651;
+    color: #FFFFFF;
+    box-shadow: 10px 10px 10px #070410;
+    justify-content: space-between;  
+    width: 361px; 
+    height: 750px; 
+    margin-top: 1530px;
+    margin-left: -769px;
+    margin-bottom: 00px;
+  }
+
+  .MovieContainer .Movie-5 .Movie-Poster img {
+    width: 360px; 
+    height: 340px; 
+    object-fit: cover; 
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+  
+  .MovieContainer .Movie-5 .Movie-Description {
+    width: 100%;
+    margin-top: 5px; 
+   }  
+  
+  .MovieContainer .Movie-5 .Movie-Description p {
+    font-size: 24px;
+    text-align: left; 
+    line-height: 1.2; 
+    margin-top: -390px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    word-wrap: break-word;
+    width: 300px;
+  }
+  
+  .MovieContainer .Movie-5 button {
+    font-family: "Teko", sans-serif;
+    border: 0;
+    border-radius: 10px;
+    height: 100px;
+    width: 330px;
+    box-sizing: border-box;
+    margin-left: 12px; 
+    margin-top: -25px;
+    margin-bottom: 10px;
+  }
+  
+  .MovieContainer .Movie-5 button a {
+    color: #070410;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+    text-align: center; 
+    margin-left: -130px;
+    font-size: 70px;
+  } 
+  
+  .MovieContainer .Movie-6 {
+    background-color: #231651;
+    color: #FFFFFF;
+    box-shadow: 10px 10px 10px #070410;
+    justify-content: space-between;  
+    width: 361px; 
+    height: 750px; 
+    margin-top: 1530px;
+    left: -360px; 
+    position: relative; 
+  }
+
+  .MovieContainer .Movie-6 .Movie-Poster img {
+    width: 360px; 
+    height: 340px; 
+    object-fit: cover; 
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+  
+  .MovieContainer .Movie-6 .Movie-Description {
+    width: 100%; 
+    margin-top: 5px; 
+   }  
+  
+  .MovieContainer .Movie-6 .Movie-Description p {
+    font-size: 24px;
+    text-align: left; 
+    line-height: 1.2; 
+    margin-top: -390px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    word-wrap: break-word;
+    width: 300px;
+  }
+  
+  .MovieContainer .Movie-6 button {
+    font-family: "Teko", sans-serif;
+    border: 0;
+    border-radius: 10px;
+    height: 100px;
+    width: 330px;
+    box-sizing: border-box;
+    margin-left: 12px; 
+    margin-top: -25px;
+    margin-bottom: 10px;
+  }
+  
+  .MovieContainer .Movie-6 button a {
+    color: #070410;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap; 
+    text-align: center; 
+    margin-left: -130px;
+    font-size: 70px;
+  } 
+
+}
