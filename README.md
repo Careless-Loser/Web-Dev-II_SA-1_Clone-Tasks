@@ -13,8 +13,14 @@ Activities in Class and the First Assessment</p>
     └── **Class Activity**        
 
 ### 1. Task 1 - Responsive Layout and Typography
+  - **Asssets**
+  - **index.html**
+  - **style.css**
 
 ### 2. Task 2 - Advanced Layout
+  - **Asssets**
+  - **index.html**
+  - **style.css**
 
 ### 3. Class Activity
 
@@ -34,4 +40,5 @@ Activities in Class and the First Assessment</p>
 - **Exercise 6: CSS Media Queries**
   - **Task 1: Syntax and Usage of CSS Media Queries**
   - **Task 2: Mobile-First Design with CSS Media Queries**
-  - **Task 3: CSS Media Queries in Real-World Scenarios**
+- **Exercise 7: Introduction to SASS**
+
